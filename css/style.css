@@ -24,13 +24,13 @@ body{
   background-color: #255F85;
 }
 
-.navbar-nav li a {
+.navbar-nav li a{
   color: white !important;
 }
 
 .navbar-nav li:hover {
-  border-bottom: 3px solid #EA4335;
-  font-weight: 700;
+  border-bottom: 3px solid #EA4335 !important;
+  font-weight: 700 !important;
 }
 
 .navbar-nav li:focus {
@@ -165,12 +165,33 @@ body{
   text-align: left;
 }
 
-#projects {
+#domains {
   padding-top: 7%;
 }
 
-#projects h2{
+#domains h2{
   font-size: 3rem;
   font-weight: 800 !important;
   text-align: center;
+}
+
+#domains img{
+  width: 5rem;
+  height: 4rem;
+}
+
+#domains p{
+  padding-top: 2rem;
+}
+
+#domains h3{
+  font-weight: 600;
+}
+
+#domains span{
+  color: #255F85;
+}
+
+.card{
+  border-radius: 10%;
 }
