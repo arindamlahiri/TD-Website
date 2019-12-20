@@ -96,6 +96,29 @@ body{
     margin-bottom: 50px;
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid rgba(255,255,255,0.75);
+    animation: typewriter 2s steps(40) 1s 1 normal both,
+    blinkTextCursor 500ms steps(40) infinite normal;
+  }
+
+  @keyframes typewriter{
+    from{
+      width:0;
+    }
+    to{
+      width: 18rem;
+    }
+  }
+
+  @keyframes blinkTextCursor{
+    from{
+      border-right-color: rgba(255,255,255,0.75);
+    }
+    to{
+      border-right-color: transparent;
+    }
   }
   
   @media (max-width: 768px) {
@@ -149,11 +172,6 @@ body{
   height: 100%;
 }
 
-#illustration-img2{
-  width: 90%;
-  height: 90%;
-}
-
 .line{
   width: 6rem;
   height: 0.1rem;
@@ -178,6 +196,13 @@ body{
 #domains img{
   width: 5rem;
   height: 4rem;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: 0.1s ease;
+  -webkit-transition: 0.1s ease;
+  -moz-transition: 0.1s ease;
+  -ms-transition: 0.1s ease;
+  -o-transition: 0.1s ease;
 }
 
 #domains p{
@@ -194,4 +219,22 @@ body{
 
 .card{
   border-radius: 10%;
+  transition: 0.1s ease;
+  -webkit-transition: 0.1s ease;
+  -moz-transition: 0.1s ease;
+  -ms-transition: 0.1s ease;
+  -o-transition: 0.1s ease;
+}
+
+.card:hover img{
+  filter: grayscale(0%) !important;
+  -webkit-filter: grayscale(0%) !important;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
